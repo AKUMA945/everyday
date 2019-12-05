@@ -1,0 +1,16 @@
+{
+  "name": "lian4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "showfiles": "./bin/index.js",
+    "change": "./bin/changename.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
