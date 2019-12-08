@@ -1,20 +1,20 @@
 const mysql = require("mysql")
 
 module.exports = (sql,params=[])=>{
-    let connection = mysql.createConnection({
+    const connection = mysql.createConnection({
         host:"localhost",
         port:3306,
         user:"root",
         password:"root",
-        database:"userlist"
+        database:"weeklist"
     })
-    
+
     connection.connect((error)=>{
         if(error){
             console.log(error)
             console.log("数据连接失败")
         }else{
-            console.log("数据库连接成功")
+            console.log("数据连接成功")
         }
     })
 
@@ -24,11 +24,8 @@ module.exports = (sql,params=[])=>{
                 reject(error)
             }else{
                 resolve(results)
-                
             }
         })
         connection.end()
     })
-
 }
-
